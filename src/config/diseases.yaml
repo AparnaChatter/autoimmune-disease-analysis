@@ -1,0 +1,25 @@
+# Display names, PubMed MeSH queries, and Google Trends keywords
+diseases:
+  - id: sle
+    name: Systemic Lupus Erythematosus
+    pubmed_query: '"Lupus Erythematosus, Systemic"[MeSH Terms]'
+    trends_terms: ["lupus", "SLE"]
+  - id: ms
+    name: Multiple Sclerosis
+    pubmed_query: '"Multiple Sclerosis"[MeSH Terms]'
+    trends_terms: ["multiple sclerosis", "MS disease"]
+  - id: hashimoto
+    name: Hashimoto Thyroiditis
+    pubmed_query: '"Thyroiditis, Autoimmune"[MeSH Terms] OR "Hashimoto Disease"[MeSH Terms]'
+    trends_terms: ["hashimoto", "hashimoto's thyroiditis"]
+  - id: ra
+    name: Rheumatoid Arthritis
+    pubmed_query: '"Arthritis, Rheumatoid"[MeSH Terms]'
+    trends_terms: ["rheumatoid arthritis", "RA arthritis"]
+  - id: sjogren
+    name: Sjögren Syndrome
+    pubmed_query: '"Sjögren''s Syndrome"[MeSH Terms]'
+    trends_terms: ["sjogren", "sjögren"]
+years:
+  start: 2000
+  end: 2025
