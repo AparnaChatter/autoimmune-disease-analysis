@@ -83,4 +83,3 @@ def plot_gender_disparity():
 
 if __name__ == "__main__":
     plot_gender_disparity()
-pip uninstall -y seaborn pandas numpy
