@@ -1,0 +1,92 @@
+"Notes","Sex","Sex Code","Year","Year Code",Deaths,Population,Crude Rate
+,"Female","F","2000","2000",2049,143368343,1.4
+,"Female","F","2001","2001",2029,145077463,1.4
+,"Female","F","2002","2002",2112,146394634,1.4
+,"Female","F","2003","2003",2020,147679036,1.4
+,"Female","F","2004","2004",1957,148977286,1.3
+,"Female","F","2005","2005",1930,150319521,1.3
+,"Female","F","2006","2006",1891,151732647,1.2
+,"Female","F","2007","2007",1844,153166353,1.2
+,"Female","F","2008","2008",1981,154604015,1.3
+,"Female","F","2009","2009",1764,155964075,1.1
+,"Female","F","2010","2010",1854,156964212,1.2
+,"Female","F","2011","2011",1916,158301098,1.2
+,"Female","F","2012","2012",1851,159421973,1.2
+,"Female","F","2013","2013",1817,160477237,1.1
+,"Female","F","2014","2014",1663,161920569,1.0
+,"Female","F","2015","2015",1703,163189523,1.0
+,"Female","F","2016","2016",1660,164048590,1.0
+"Total","Female","F",,,32041,2621606575,1.2
+,"Male","M","2000","2000",631,138053563,0.5
+,"Male","M","2001","2001",614,139891492,0.4
+,"Male","M","2002","2002",676,141230559,0.5
+,"Male","M","2003","2003",633,142428897,0.4
+,"Male","M","2004","2004",600,143828012,0.4
+,"Male","M","2005","2005",590,145197078,0.4
+,"Male","M","2006","2006",583,146647265,0.4
+,"Male","M","2007","2007",569,148064854,0.4
+,"Male","M","2008","2008",602,149489951,0.4
+,"Male","M","2009","2009",516,150807454,0.3
+,"Male","M","2010","2010",548,151781326,0.4
+,"Male","M","2011","2011",555,153290819,0.4
+,"Male","M","2012","2012",542,154492067,0.4
+,"Male","M","2013","2013",556,155651602,0.4
+,"Male","M","2014","2014",557,156936487,0.4
+,"Male","M","2015","2015",533,158229297,0.3
+,"Male","M","2016","2016",563,159078923,0.4
+"Total","Male","M",,,9868,2535099646,0.4
+"Total",,,,,41909,5156706221,0.8
+"---"
+"Dataset: Compressed Mortality, 1999-2016"
+"Query Parameters:"
+"ICD-10 Codes: M05.0 (Felty syndrome); M05.1 (Rheumatoid lung disease (J99.0*)); M05.2 (Rheumatoid vasculitis); M05.3 (Rheumatoid"
+"arthritis with involvement of other organs and systems); M05.8 (Other seropositive rheumatoid arthritis); M05.9 (Seropositive"
+"rheumatoid arthritis, unspecified); M06.0 (Seronegative rheumatoid arthritis); M06.1 (Adult-onset Still disease); M06.2"
+"(Rheumatoid bursitis); M06.3 (Rheumatoid nodule); M06.4 (Inflammatory polyarthropathy); M06.8 (Other specified rheumatoid"
+"arthritis); M06.9 (Rheumatoid arthritis, unspecified)"
+"Sex: Female; Male"
+"Year: 2000; 2001; 2002; 2003; 2004; 2005; 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014; 2015; 2016"
+"Group By: Sex; Year"
+"Show Totals: True"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/cmf.html for more information."
+"---"
+"Query Date: Sep 12, 2025 5:37:59 AM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality: Compressed Mortality File 1999-2016 on CDC WONDER Online Database, released June 2017. Data are from the"
+"Compressed Mortality File 1999-2016 Series 20 No. 2U, 2016, as compiled from data provided by the 57 vital statistics"
+"jurisdictions through the Vital Statistics Cooperative Program. Accessed at http://wonder.cdc.gov/cmf-icd10.html on Sep 12, 2025"
+"5:37:59 AM"
+"---"
+Caveats:
+"1. About national population figures: population figures for 1999 are from the 1990-1999 series of bridged-race intercensal"
+"estimates of the July 1 resident population; population figures for 2000 and 2010 are bridged-race April 1 census counts;"
+"population figures for 2001-2009 are from the revised 2000-2009 series of bridged-race intercensal estimates of the July 1"
+"resident population; population figures for 2011 are bridged-race postcensal estimates of the July 1 resident population, from"
+"the Vintage 2011 series released by NCHS on July 18, 2012; population figures for 2012 are bridged-race postcensal estimates of"
+"the July 1 resident population, from the Vintage 2012 series released by NCHS on June 13, 2013; population figures for 2013 are"
+"bridged-race postcensal estimates of the July 1 resident population, from the Vintage 2013 series released by NCHS on June 26,"
+"2014; population figures for 2014 are bridged-race postcensal estimates of the July 1 resident population, from the Vintage 2014"
+"series released by NCHS on June 30, 2015. and population figures for 2015 are bridged-race postcensal estimates of the July 1"
+"resident population, from the Vintage 2015 series released by NCHS on June 28, 2016. More information:"
+"http://wonder.cdc.gov/wonder/help/cmf.html#Population Information."
+"2. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/cmf.html#Age Group."
+"3. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/cmf.html#ICD-10 Changes."
+"4. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/cmf.html#2014-Revision."
+"5. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/cmf.html#California-Reporting-Anomalies."
+"6. Circumstances in Georgia for the years 2008-2009 have resulted in unusually high death counts for the ICD-10 cause of death"
+"code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data. More"
+"information: http://wonder.cdc.gov/wonder/help/cmf.html#Georgia-Reporting-Anomalies."
+"7. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/cmf.html#New-Jersey-Reporting-Anomalies."

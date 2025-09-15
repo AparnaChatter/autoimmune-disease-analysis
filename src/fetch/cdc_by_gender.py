@@ -1,7 +1,6 @@
 # Script to fetch and preprocess CDC data by sex for autoimmune diseases
 # Placeholder: implement CDC data fetching and group by sex
 def fetch_cdc_data():
-def fetch_cdc_data():
     import requests
     import pandas as pd
     # CDC CDI Socrata API endpoint for arthritis

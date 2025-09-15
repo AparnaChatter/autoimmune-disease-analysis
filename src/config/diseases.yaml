@@ -1,4 +1,4 @@
-# Display names, PubMed MeSH queries, and Google Trends keywords
+# Names, PubMed MeSH queries, and Google Trends keywords
 diseases:
   - id: sle
     name: Systemic Lupus Erythematosus

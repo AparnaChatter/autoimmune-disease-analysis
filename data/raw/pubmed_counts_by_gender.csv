@@ -1,0 +1,261 @@
+year,count,disease_id,disease_name,gender
+2000,102,sle,Systemic Lupus Erythematosus,women
+2001,115,sle,Systemic Lupus Erythematosus,women
+2002,150,sle,Systemic Lupus Erythematosus,women
+2003,138,sle,Systemic Lupus Erythematosus,women
+2004,139,sle,Systemic Lupus Erythematosus,women
+2005,169,sle,Systemic Lupus Erythematosus,women
+2006,175,sle,Systemic Lupus Erythematosus,women
+2007,170,sle,Systemic Lupus Erythematosus,women
+2008,200,sle,Systemic Lupus Erythematosus,women
+2009,237,sle,Systemic Lupus Erythematosus,women
+2010,239,sle,Systemic Lupus Erythematosus,women
+2011,253,sle,Systemic Lupus Erythematosus,women
+2012,249,sle,Systemic Lupus Erythematosus,women
+2013,246,sle,Systemic Lupus Erythematosus,women
+2014,266,sle,Systemic Lupus Erythematosus,women
+2015,261,sle,Systemic Lupus Erythematosus,women
+2016,256,sle,Systemic Lupus Erythematosus,women
+2017,285,sle,Systemic Lupus Erythematosus,women
+2018,270,sle,Systemic Lupus Erythematosus,women
+2019,298,sle,Systemic Lupus Erythematosus,women
+2020,288,sle,Systemic Lupus Erythematosus,women
+2021,338,sle,Systemic Lupus Erythematosus,women
+2022,340,sle,Systemic Lupus Erythematosus,women
+2023,309,sle,Systemic Lupus Erythematosus,women
+2024,298,sle,Systemic Lupus Erythematosus,women
+2025,203,sle,Systemic Lupus Erythematosus,women
+2000,14,sle,Systemic Lupus Erythematosus,men
+2001,14,sle,Systemic Lupus Erythematosus,men
+2002,20,sle,Systemic Lupus Erythematosus,men
+2003,19,sle,Systemic Lupus Erythematosus,men
+2004,21,sle,Systemic Lupus Erythematosus,men
+2005,16,sle,Systemic Lupus Erythematosus,men
+2006,20,sle,Systemic Lupus Erythematosus,men
+2007,16,sle,Systemic Lupus Erythematosus,men
+2008,25,sle,Systemic Lupus Erythematosus,men
+2009,19,sle,Systemic Lupus Erythematosus,men
+2010,22,sle,Systemic Lupus Erythematosus,men
+2011,33,sle,Systemic Lupus Erythematosus,men
+2012,31,sle,Systemic Lupus Erythematosus,men
+2013,32,sle,Systemic Lupus Erythematosus,men
+2014,20,sle,Systemic Lupus Erythematosus,men
+2015,26,sle,Systemic Lupus Erythematosus,men
+2016,34,sle,Systemic Lupus Erythematosus,men
+2017,32,sle,Systemic Lupus Erythematosus,men
+2018,21,sle,Systemic Lupus Erythematosus,men
+2019,28,sle,Systemic Lupus Erythematosus,men
+2020,25,sle,Systemic Lupus Erythematosus,men
+2021,23,sle,Systemic Lupus Erythematosus,men
+2022,27,sle,Systemic Lupus Erythematosus,men
+2023,30,sle,Systemic Lupus Erythematosus,men
+2024,39,sle,Systemic Lupus Erythematosus,men
+2025,19,sle,Systemic Lupus Erythematosus,men
+2000,66,ms,Multiple Sclerosis,women
+2001,61,ms,Multiple Sclerosis,women
+2002,64,ms,Multiple Sclerosis,women
+2003,81,ms,Multiple Sclerosis,women
+2004,116,ms,Multiple Sclerosis,women
+2005,96,ms,Multiple Sclerosis,women
+2006,100,ms,Multiple Sclerosis,women
+2007,105,ms,Multiple Sclerosis,women
+2008,130,ms,Multiple Sclerosis,women
+2009,151,ms,Multiple Sclerosis,women
+2010,128,ms,Multiple Sclerosis,women
+2011,151,ms,Multiple Sclerosis,women
+2012,162,ms,Multiple Sclerosis,women
+2013,205,ms,Multiple Sclerosis,women
+2014,238,ms,Multiple Sclerosis,women
+2015,244,ms,Multiple Sclerosis,women
+2016,221,ms,Multiple Sclerosis,women
+2017,234,ms,Multiple Sclerosis,women
+2018,279,ms,Multiple Sclerosis,women
+2019,269,ms,Multiple Sclerosis,women
+2020,329,ms,Multiple Sclerosis,women
+2021,293,ms,Multiple Sclerosis,women
+2022,303,ms,Multiple Sclerosis,women
+2023,298,ms,Multiple Sclerosis,women
+2024,308,ms,Multiple Sclerosis,women
+2025,179,ms,Multiple Sclerosis,women
+2000,15,ms,Multiple Sclerosis,men
+2001,20,ms,Multiple Sclerosis,men
+2002,21,ms,Multiple Sclerosis,men
+2003,22,ms,Multiple Sclerosis,men
+2004,49,ms,Multiple Sclerosis,men
+2005,26,ms,Multiple Sclerosis,men
+2006,34,ms,Multiple Sclerosis,men
+2007,36,ms,Multiple Sclerosis,men
+2008,35,ms,Multiple Sclerosis,men
+2009,50,ms,Multiple Sclerosis,men
+2010,41,ms,Multiple Sclerosis,men
+2011,50,ms,Multiple Sclerosis,men
+2012,69,ms,Multiple Sclerosis,men
+2013,72,ms,Multiple Sclerosis,men
+2014,78,ms,Multiple Sclerosis,men
+2015,86,ms,Multiple Sclerosis,men
+2016,77,ms,Multiple Sclerosis,men
+2017,72,ms,Multiple Sclerosis,men
+2018,85,ms,Multiple Sclerosis,men
+2019,76,ms,Multiple Sclerosis,men
+2020,86,ms,Multiple Sclerosis,men
+2021,72,ms,Multiple Sclerosis,men
+2022,73,ms,Multiple Sclerosis,men
+2023,62,ms,Multiple Sclerosis,men
+2024,70,ms,Multiple Sclerosis,men
+2025,44,ms,Multiple Sclerosis,men
+2000,30,hashimoto,Hashimoto Thyroiditis,women
+2001,26,hashimoto,Hashimoto Thyroiditis,women
+2002,34,hashimoto,Hashimoto Thyroiditis,women
+2003,31,hashimoto,Hashimoto Thyroiditis,women
+2004,33,hashimoto,Hashimoto Thyroiditis,women
+2005,30,hashimoto,Hashimoto Thyroiditis,women
+2006,47,hashimoto,Hashimoto Thyroiditis,women
+2007,31,hashimoto,Hashimoto Thyroiditis,women
+2008,36,hashimoto,Hashimoto Thyroiditis,women
+2009,33,hashimoto,Hashimoto Thyroiditis,women
+2010,53,hashimoto,Hashimoto Thyroiditis,women
+2011,53,hashimoto,Hashimoto Thyroiditis,women
+2012,59,hashimoto,Hashimoto Thyroiditis,women
+2013,60,hashimoto,Hashimoto Thyroiditis,women
+2014,57,hashimoto,Hashimoto Thyroiditis,women
+2015,68,hashimoto,Hashimoto Thyroiditis,women
+2016,57,hashimoto,Hashimoto Thyroiditis,women
+2017,52,hashimoto,Hashimoto Thyroiditis,women
+2018,51,hashimoto,Hashimoto Thyroiditis,women
+2019,61,hashimoto,Hashimoto Thyroiditis,women
+2020,57,hashimoto,Hashimoto Thyroiditis,women
+2021,77,hashimoto,Hashimoto Thyroiditis,women
+2022,67,hashimoto,Hashimoto Thyroiditis,women
+2023,66,hashimoto,Hashimoto Thyroiditis,women
+2024,65,hashimoto,Hashimoto Thyroiditis,women
+2025,42,hashimoto,Hashimoto Thyroiditis,women
+2000,5,hashimoto,Hashimoto Thyroiditis,men
+2001,2,hashimoto,Hashimoto Thyroiditis,men
+2002,5,hashimoto,Hashimoto Thyroiditis,men
+2003,4,hashimoto,Hashimoto Thyroiditis,men
+2004,3,hashimoto,Hashimoto Thyroiditis,men
+2005,4,hashimoto,Hashimoto Thyroiditis,men
+2006,14,hashimoto,Hashimoto Thyroiditis,men
+2007,7,hashimoto,Hashimoto Thyroiditis,men
+2008,6,hashimoto,Hashimoto Thyroiditis,men
+2009,5,hashimoto,Hashimoto Thyroiditis,men
+2010,10,hashimoto,Hashimoto Thyroiditis,men
+2011,8,hashimoto,Hashimoto Thyroiditis,men
+2012,9,hashimoto,Hashimoto Thyroiditis,men
+2013,8,hashimoto,Hashimoto Thyroiditis,men
+2014,8,hashimoto,Hashimoto Thyroiditis,men
+2015,9,hashimoto,Hashimoto Thyroiditis,men
+2016,7,hashimoto,Hashimoto Thyroiditis,men
+2017,4,hashimoto,Hashimoto Thyroiditis,men
+2018,10,hashimoto,Hashimoto Thyroiditis,men
+2019,13,hashimoto,Hashimoto Thyroiditis,men
+2020,9,hashimoto,Hashimoto Thyroiditis,men
+2021,13,hashimoto,Hashimoto Thyroiditis,men
+2022,13,hashimoto,Hashimoto Thyroiditis,men
+2023,4,hashimoto,Hashimoto Thyroiditis,men
+2024,5,hashimoto,Hashimoto Thyroiditis,men
+2025,7,hashimoto,Hashimoto Thyroiditis,men
+2000,167,ra,Rheumatoid Arthritis,women
+2001,151,ra,Rheumatoid Arthritis,women
+2002,199,ra,Rheumatoid Arthritis,women
+2003,203,ra,Rheumatoid Arthritis,women
+2004,193,ra,Rheumatoid Arthritis,women
+2005,254,ra,Rheumatoid Arthritis,women
+2006,273,ra,Rheumatoid Arthritis,women
+2007,271,ra,Rheumatoid Arthritis,women
+2008,264,ra,Rheumatoid Arthritis,women
+2009,276,ra,Rheumatoid Arthritis,women
+2010,352,ra,Rheumatoid Arthritis,women
+2011,338,ra,Rheumatoid Arthritis,women
+2012,332,ra,Rheumatoid Arthritis,women
+2013,347,ra,Rheumatoid Arthritis,women
+2014,379,ra,Rheumatoid Arthritis,women
+2015,416,ra,Rheumatoid Arthritis,women
+2016,398,ra,Rheumatoid Arthritis,women
+2017,396,ra,Rheumatoid Arthritis,women
+2018,407,ra,Rheumatoid Arthritis,women
+2019,438,ra,Rheumatoid Arthritis,women
+2020,442,ra,Rheumatoid Arthritis,women
+2021,453,ra,Rheumatoid Arthritis,women
+2022,437,ra,Rheumatoid Arthritis,women
+2023,416,ra,Rheumatoid Arthritis,women
+2024,387,ra,Rheumatoid Arthritis,women
+2025,247,ra,Rheumatoid Arthritis,women
+2000,47,ra,Rheumatoid Arthritis,men
+2001,49,ra,Rheumatoid Arthritis,men
+2002,54,ra,Rheumatoid Arthritis,men
+2003,52,ra,Rheumatoid Arthritis,men
+2004,55,ra,Rheumatoid Arthritis,men
+2005,86,ra,Rheumatoid Arthritis,men
+2006,71,ra,Rheumatoid Arthritis,men
+2007,64,ra,Rheumatoid Arthritis,men
+2008,53,ra,Rheumatoid Arthritis,men
+2009,73,ra,Rheumatoid Arthritis,men
+2010,89,ra,Rheumatoid Arthritis,men
+2011,90,ra,Rheumatoid Arthritis,men
+2012,92,ra,Rheumatoid Arthritis,men
+2013,80,ra,Rheumatoid Arthritis,men
+2014,67,ra,Rheumatoid Arthritis,men
+2015,67,ra,Rheumatoid Arthritis,men
+2016,73,ra,Rheumatoid Arthritis,men
+2017,61,ra,Rheumatoid Arthritis,men
+2018,84,ra,Rheumatoid Arthritis,men
+2019,80,ra,Rheumatoid Arthritis,men
+2020,68,ra,Rheumatoid Arthritis,men
+2021,79,ra,Rheumatoid Arthritis,men
+2022,55,ra,Rheumatoid Arthritis,men
+2023,66,ra,Rheumatoid Arthritis,men
+2024,70,ra,Rheumatoid Arthritis,men
+2025,38,ra,Rheumatoid Arthritis,men
+2000,39,sjogren,Sjögren Syndrome,women
+2001,40,sjogren,Sjögren Syndrome,women
+2002,49,sjogren,Sjögren Syndrome,women
+2003,48,sjogren,Sjögren Syndrome,women
+2004,41,sjogren,Sjögren Syndrome,women
+2005,39,sjogren,Sjögren Syndrome,women
+2006,45,sjogren,Sjögren Syndrome,women
+2007,55,sjogren,Sjögren Syndrome,women
+2008,54,sjogren,Sjögren Syndrome,women
+2009,42,sjogren,Sjögren Syndrome,women
+2010,59,sjogren,Sjögren Syndrome,women
+2011,53,sjogren,Sjögren Syndrome,women
+2012,43,sjogren,Sjögren Syndrome,women
+2013,38,sjogren,Sjögren Syndrome,women
+2014,50,sjogren,Sjögren Syndrome,women
+2015,57,sjogren,Sjögren Syndrome,women
+2016,61,sjogren,Sjögren Syndrome,women
+2017,81,sjogren,Sjögren Syndrome,women
+2018,70,sjogren,Sjögren Syndrome,women
+2019,69,sjogren,Sjögren Syndrome,women
+2020,84,sjogren,Sjögren Syndrome,women
+2021,74,sjogren,Sjögren Syndrome,women
+2022,62,sjogren,Sjögren Syndrome,women
+2023,70,sjogren,Sjögren Syndrome,women
+2024,81,sjogren,Sjögren Syndrome,women
+2025,45,sjogren,Sjögren Syndrome,women
+2000,4,sjogren,Sjögren Syndrome,men
+2001,5,sjogren,Sjögren Syndrome,men
+2002,8,sjogren,Sjögren Syndrome,men
+2003,5,sjogren,Sjögren Syndrome,men
+2004,8,sjogren,Sjögren Syndrome,men
+2005,6,sjogren,Sjögren Syndrome,men
+2006,7,sjogren,Sjögren Syndrome,men
+2007,7,sjogren,Sjögren Syndrome,men
+2008,9,sjogren,Sjögren Syndrome,men
+2009,5,sjogren,Sjögren Syndrome,men
+2010,7,sjogren,Sjögren Syndrome,men
+2011,9,sjogren,Sjögren Syndrome,men
+2012,6,sjogren,Sjögren Syndrome,men
+2013,3,sjogren,Sjögren Syndrome,men
+2014,7,sjogren,Sjögren Syndrome,men
+2015,8,sjogren,Sjögren Syndrome,men
+2016,11,sjogren,Sjögren Syndrome,men
+2017,8,sjogren,Sjögren Syndrome,men
+2018,9,sjogren,Sjögren Syndrome,men
+2019,12,sjogren,Sjögren Syndrome,men
+2020,14,sjogren,Sjögren Syndrome,men
+2021,9,sjogren,Sjögren Syndrome,men
+2022,3,sjogren,Sjögren Syndrome,men
+2023,8,sjogren,Sjögren Syndrome,men
+2024,11,sjogren,Sjögren Syndrome,men
+2025,2,sjogren,Sjögren Syndrome,men

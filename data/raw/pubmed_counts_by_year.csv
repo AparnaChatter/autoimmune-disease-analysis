@@ -1,0 +1,131 @@
+year,count,disease_id,disease_name
+2000,1022,sle,Systemic Lupus Erythematosus
+2001,1103,sle,Systemic Lupus Erythematosus
+2002,1165,sle,Systemic Lupus Erythematosus
+2003,1170,sle,Systemic Lupus Erythematosus
+2004,1323,sle,Systemic Lupus Erythematosus
+2005,1460,sle,Systemic Lupus Erythematosus
+2006,1466,sle,Systemic Lupus Erythematosus
+2007,1601,sle,Systemic Lupus Erythematosus
+2008,1628,sle,Systemic Lupus Erythematosus
+2009,1766,sle,Systemic Lupus Erythematosus
+2010,1892,sle,Systemic Lupus Erythematosus
+2011,1973,sle,Systemic Lupus Erythematosus
+2012,2042,sle,Systemic Lupus Erythematosus
+2013,1950,sle,Systemic Lupus Erythematosus
+2014,2020,sle,Systemic Lupus Erythematosus
+2015,2046,sle,Systemic Lupus Erythematosus
+2016,2043,sle,Systemic Lupus Erythematosus
+2017,2053,sle,Systemic Lupus Erythematosus
+2018,2113,sle,Systemic Lupus Erythematosus
+2019,2195,sle,Systemic Lupus Erythematosus
+2020,2370,sle,Systemic Lupus Erythematosus
+2021,2564,sle,Systemic Lupus Erythematosus
+2022,2510,sle,Systemic Lupus Erythematosus
+2023,2340,sle,Systemic Lupus Erythematosus
+2024,2281,sle,Systemic Lupus Erythematosus
+2025,1363,sle,Systemic Lupus Erythematosus
+2000,1210,ms,Multiple Sclerosis
+2001,1239,ms,Multiple Sclerosis
+2002,1183,ms,Multiple Sclerosis
+2003,1328,ms,Multiple Sclerosis
+2004,1440,ms,Multiple Sclerosis
+2005,1594,ms,Multiple Sclerosis
+2006,1628,ms,Multiple Sclerosis
+2007,1832,ms,Multiple Sclerosis
+2008,2015,ms,Multiple Sclerosis
+2009,2125,ms,Multiple Sclerosis
+2010,2306,ms,Multiple Sclerosis
+2011,2566,ms,Multiple Sclerosis
+2012,2705,ms,Multiple Sclerosis
+2013,2920,ms,Multiple Sclerosis
+2014,3052,ms,Multiple Sclerosis
+2015,3140,ms,Multiple Sclerosis
+2016,3150,ms,Multiple Sclerosis
+2017,3170,ms,Multiple Sclerosis
+2018,3245,ms,Multiple Sclerosis
+2019,3420,ms,Multiple Sclerosis
+2020,3805,ms,Multiple Sclerosis
+2021,3855,ms,Multiple Sclerosis
+2022,3783,ms,Multiple Sclerosis
+2023,3203,ms,Multiple Sclerosis
+2024,3318,ms,Multiple Sclerosis
+2025,1885,ms,Multiple Sclerosis
+2000,178,hashimoto,Hashimoto Thyroiditis
+2001,185,hashimoto,Hashimoto Thyroiditis
+2002,200,hashimoto,Hashimoto Thyroiditis
+2003,251,hashimoto,Hashimoto Thyroiditis
+2004,223,hashimoto,Hashimoto Thyroiditis
+2005,238,hashimoto,Hashimoto Thyroiditis
+2006,293,hashimoto,Hashimoto Thyroiditis
+2007,234,hashimoto,Hashimoto Thyroiditis
+2008,288,hashimoto,Hashimoto Thyroiditis
+2009,285,hashimoto,Hashimoto Thyroiditis
+2010,321,hashimoto,Hashimoto Thyroiditis
+2011,320,hashimoto,Hashimoto Thyroiditis
+2012,337,hashimoto,Hashimoto Thyroiditis
+2013,361,hashimoto,Hashimoto Thyroiditis
+2014,377,hashimoto,Hashimoto Thyroiditis
+2015,391,hashimoto,Hashimoto Thyroiditis
+2016,389,hashimoto,Hashimoto Thyroiditis
+2017,327,hashimoto,Hashimoto Thyroiditis
+2018,366,hashimoto,Hashimoto Thyroiditis
+2019,374,hashimoto,Hashimoto Thyroiditis
+2020,439,hashimoto,Hashimoto Thyroiditis
+2021,419,hashimoto,Hashimoto Thyroiditis
+2022,469,hashimoto,Hashimoto Thyroiditis
+2023,474,hashimoto,Hashimoto Thyroiditis
+2024,487,hashimoto,Hashimoto Thyroiditis
+2025,284,hashimoto,Hashimoto Thyroiditis
+2000,1824,ra,Rheumatoid Arthritis
+2001,1979,ra,Rheumatoid Arthritis
+2002,2201,ra,Rheumatoid Arthritis
+2003,2252,ra,Rheumatoid Arthritis
+2004,2378,ra,Rheumatoid Arthritis
+2005,2884,ra,Rheumatoid Arthritis
+2006,2738,ra,Rheumatoid Arthritis
+2007,2994,ra,Rheumatoid Arthritis
+2008,2929,ra,Rheumatoid Arthritis
+2009,3167,ra,Rheumatoid Arthritis
+2010,3426,ra,Rheumatoid Arthritis
+2011,3641,ra,Rheumatoid Arthritis
+2012,3775,ra,Rheumatoid Arthritis
+2013,3737,ra,Rheumatoid Arthritis
+2014,3905,ra,Rheumatoid Arthritis
+2015,3965,ra,Rheumatoid Arthritis
+2016,3979,ra,Rheumatoid Arthritis
+2017,3908,ra,Rheumatoid Arthritis
+2018,3874,ra,Rheumatoid Arthritis
+2019,4017,ra,Rheumatoid Arthritis
+2020,4241,ra,Rheumatoid Arthritis
+2021,4324,ra,Rheumatoid Arthritis
+2022,4182,ra,Rheumatoid Arthritis
+2023,4156,ra,Rheumatoid Arthritis
+2024,3909,ra,Rheumatoid Arthritis
+2025,2470,ra,Rheumatoid Arthritis
+2000,0,sjogren,SjÃ¶gren Syndrome
+2001,0,sjogren,SjÃ¶gren Syndrome
+2002,0,sjogren,SjÃ¶gren Syndrome
+2003,0,sjogren,SjÃ¶gren Syndrome
+2004,0,sjogren,SjÃ¶gren Syndrome
+2005,0,sjogren,SjÃ¶gren Syndrome
+2006,0,sjogren,SjÃ¶gren Syndrome
+2007,0,sjogren,SjÃ¶gren Syndrome
+2008,0,sjogren,SjÃ¶gren Syndrome
+2009,0,sjogren,SjÃ¶gren Syndrome
+2010,0,sjogren,SjÃ¶gren Syndrome
+2011,0,sjogren,SjÃ¶gren Syndrome
+2012,0,sjogren,SjÃ¶gren Syndrome
+2013,0,sjogren,SjÃ¶gren Syndrome
+2014,0,sjogren,SjÃ¶gren Syndrome
+2015,0,sjogren,SjÃ¶gren Syndrome
+2016,0,sjogren,SjÃ¶gren Syndrome
+2017,0,sjogren,SjÃ¶gren Syndrome
+2018,0,sjogren,SjÃ¶gren Syndrome
+2019,0,sjogren,SjÃ¶gren Syndrome
+2020,0,sjogren,SjÃ¶gren Syndrome
+2021,0,sjogren,SjÃ¶gren Syndrome
+2022,0,sjogren,SjÃ¶gren Syndrome
+2023,0,sjogren,SjÃ¶gren Syndrome
+2024,0,sjogren,SjÃ¶gren Syndrome
+2025,0,sjogren,SjÃ¶gren Syndrome

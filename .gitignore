@@ -184,7 +184,5 @@ cython_debug/
 __pycache__/
 .ipynb_checkpoints/
 .env
-data/raw/*
 data/interim/*
-data/processed/*
 reports/*

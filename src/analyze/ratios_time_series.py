@@ -16,8 +16,7 @@ def main():
     df = pd.read_csv(p)
     df["pubmed_norm"] = df.groupby("disease_id")["pubmed_count"].transform(normalize)
     df["trends_norm"] = df.groupby("disease_id")["interest"].transform(normalize)
-    # attention gap proxy (positive means research > public attention)
-    df["attention_gap"] = df["pubmed_norm"] - df["trends_norm"]
+    df["attention_gap"] = df["pubmed_norm"] - df["trends_norm"] # positive means research > public attention
     write_csv(df, PROCESSED / "attention_scores.csv")
     logger.info(f"Analyzed {len(df)} rows into attention_scores.csv")
 
