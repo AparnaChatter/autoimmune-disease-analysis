@@ -1,6 +1,6 @@
 import requests
-import yaml
 import pandas as pd
+import xml.etree.ElementTree as ET
 
 # Map your diseases to ICD-10 codes for CDC WONDER
 ICD10_MAP = {
@@ -11,40 +11,85 @@ ICD10_MAP = {
     "sjogren": "M35.0"  # Sjögren Syndrome
 }
 
-with open("src/config/diseases.yaml", "r", encoding="utf-8") as f:
-    cfg = yaml.safe_load(f)
+WONDER_URL = "https://wonder.cdc.gov/controller/datarequest/D76"
 
-years = list(range(cfg["years"]["start"], cfg["years"]["end"] + 1))
-results = []
+def build_request_xml(icd_codes: str) -> str:
+    """
+    Build XML request for WONDER D76 mortality database
+    Group by Sex and Year, filter by ICD-10 codes
+    """
+    xml = f"""<request-parameters>
+  <parameter>
+    <name>accept_datause_restrictions</name>
+    <value>true</value>
+  </parameter>
+  <parameter>
+    <name>B_1</name>
+    <value>D76.V1-level1</value> <!-- Year -->
+  </parameter>
+  <parameter>
+    <name>B_2</name>
+    <value>D76.V7</value> <!-- Sex -->
+  </parameter>
+  <parameter>
+    <name>F_D76.V2</name>
+    <value>{icd_codes}</value> <!-- ICD-10 filter -->
+  </parameter>
+  <parameter>
+    <name>M_1</name>
+    <value>D76.M1</value> <!-- Number of deaths -->
+  </parameter>
+  <parameter>
+    <name>O_ucd</name>
+    <value>D76.V2</value> <!-- Underlying cause of death field -->
+  </parameter>
+  <parameter>
+    <name>O_show_suppressed</name>
+    <value>true</value>
+  </parameter>
+  <parameter>
+    <name>O_show_zeros</name>
+    <value>true</value>
+  </parameter>
+  <parameter>
+    <name>O_show_totals</name>
+    <value>true</value>
+  </parameter>
+</request-parameters>"""
+    return xml
 
-for disease in cfg["diseases"]:
-    disease_id = disease["id"]
-    icd10 = ICD10_MAP.get(disease_id)
-    if not icd10:
-        print(f"No ICD-10 code for {disease['name']}, skipping.")
-        continue
-    for year in years:
-        url = "https://wonder.cdc.gov/api/v1/ucd"
-        params = {
-            "icd10": icd10,
-            "group_by": "sex",
-            "year": year
-        }
+def query_wonder(icd_codes: str) -> pd.DataFrame:
+    """
+    Query CDC WONDER API for ICD-10 codes.
+    Returns Pandas DataFrame with columns: Year, Sex, Deaths
+    """
+    xml_request = build_request_xml(icd_codes)
+    response = requests.post(
+        WONDER_URL,
+        data={"request_xml": xml_request, "accept_datause_restrictions": "true"}
+    )
+    response.raise_for_status()
+
+    root = ET.fromstring(response.text)
+
+    # Navigate to data-table rows
+    data_table = root.find(".//data-table")
+    rows = []
+    for row in data_table.findall("r"):
+        cells = [c.text for c in row.findall("c")]
+        rows.append(cells)
+
+    # Convert to DataFrame
+    df = pd.DataFrame(rows, columns=["Year", "Sex", "Deaths"])
+    return df
+
+if __name__ == "__main__":
+    results = {}
+    for disease, codes in ICD10_MAP.items():
         try:
-            r = requests.get(url, params=params)
-            r.raise_for_status()
-            data = r.json()
-            for row in data.get('results', []):
-                row['disease_id'] = disease_id
-                row['disease_name'] = disease['name']
-                row['year'] = year
-                results.append(row)
+            df = query_wonder(codes)
+            results[disease] = df
+            print(f"\n=== {disease.upper()} ===")
+            print(df.head())
         except Exception as e:
-            print(f"Error fetching {disease['name']} {year}: {e}")
-
-if results:
-    df = pd.DataFrame(results)
-    df.to_csv("data/processed/cdc_wonder_by_gender.csv", index=False)
-    print("Saved CDC WONDER mortality by gender to data/processed/cdc_wonder_by_gender.csv")
-else:
-    print("No results fetched.")
+            print(f"Failed for {disease}: {e}")
