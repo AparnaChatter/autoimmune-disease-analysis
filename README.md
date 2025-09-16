@@ -31,7 +31,7 @@ conda activate autoimmune-disease
 pip install -r requirements.txt
 ```
 
-3. Fetch or place raw data in `data/raw/` (all CDC CSVs were downloaded manually for this project due to the API not working). To run the included fetchers:
+3. Fetch or place raw data in `data/raw/` (all CDC and Google Trends CSVs were downloaded manually for this project due to the API not working and web scraping being blocked on Google Trends). To run the included fetchers:
 
 Note: If you encounter issues where PYTHONPATH is not recognized, remove the `PYTHONPATH=src` prefix and run the scripts directly with `python src/...`.
 
