@@ -33,10 +33,15 @@ pip install -r requirements.txt
 
 3. Fetch or place raw data in `data/raw/` (all CDC CSVs were downloaded manually for this project due to the API not working). To run the included fetchers:
 
+Note: If you encounter issues where PYTHONPATH is not recognized, remove the `PYTHONPATH=src` prefix and run the scripts directly with `python src/...`.
+
 ```bash
-PYTHONPATH=src python src/fetch/pubmed_counts_by_gender.py # fetch yearly PubMed counts classified by gender
-PYTHONPATH=src python src/fetch/google_trends.py  # fetch Google Trends interest for configured terms
-PYTHONPATH=src python src/fetch/cdc_wonder_by_gender.py # fetch CDC WONDER data (if API access is available; otherwise download manually)
+# fetch yearly PubMed counts classified by gender
+PYTHONPATH=src python src/fetch/pubmed_counts_by_gender.py
+# fetch Google Trends interest for configured terms
+PYTHONPATH=src python src/fetch/google_trends.py
+# fetch CDC WONDER data (if API access is available)
+PYTHONPATH=src python src/fetch/cdc_wonder_by_gender.py
 ```
 
 4. Clean and merge the signals
@@ -50,9 +55,12 @@ PYTHONPATH=src python src/transform/clean_merge_gendered.py
 5. Run analyses & visualizations
 
 ```bash
-PYTHONPATH=src python src/visualization/plot_correlations.py # compute lagged correlations and save heatmaps
-PYTHONPATH=src python src/visualization/corr_followups.py # follow-up analyses (z-overlays, CCF plots, Granger wrappers)
-PYTHONPATH=src python src/visualization/gender_disparity_plots.py # additional time-series and correlation plots by gender
+# compute lagged correlations and save heatmaps
+PYTHONPATH=src python src/visualization/plot_correlations.py
+# follow-up analyses (z-overlays, CCF plots, Granger wrappers)
+PYTHONPATH=src python src/visualization/corr_followups.py
+# additional time-series and correlation plots by gender
+PYTHONPATH=src python src/visualization/gender_disparity_plots.py
 ```
 
 Outputs (figures and CSVs) are written to the `reports/` directory. The primary merged dataset is at `data/processed/merged_gendered_signals.csv` and the correlation summary is at `reports/correlation_summary.csv`.
