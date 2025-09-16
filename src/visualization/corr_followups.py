@@ -16,7 +16,15 @@ from scipy import stats
 
 
 def zscore(s):
-    return (s - s.mean()) / s.std() if s.std() and not s.std()==0 else (s - s.mean())
+    st = s.std()
+    # if standard deviation is defined and non-zero, z-score; otherwise return demeaned series
+    try:
+        if pd.notna(st) and st != 0:
+            return (s - s.mean()) / st
+        else:
+            return (s - s.mean())
+    except Exception:
+        return (s - s.mean())
 
 
 def ccf(a, b, maxlag=5):
@@ -56,7 +64,6 @@ def main():
     rpt.mkdir(exist_ok=True)
     cs = pd.read_csv(rpt / 'correlation_summary.csv')
     merged = pd.read_csv(Path('data/processed/merged_gendered_signals.csv'))
-    # pick top pairs (exclude ALL) with n>=5 by abs pearson_r
     cand = cs[(cs['disease_id']!='ALL') & (cs['n']>=5)].copy()
     cand['absr'] = cand['pearson_r'].abs()
     top = cand.sort_values('absr', ascending=False).drop_duplicates(subset=['disease_id','gender','pair']).head(6)
@@ -75,16 +82,34 @@ def main():
         if sub.empty:
             continue
         years = sub['year'].astype(int)
-        A = zscore(pd.to_numeric(sub['interest'], errors='coerce')) if 'interest' in sub.columns else None
-        B = zscore(pd.to_numeric(sub['count'], errors='coerce')) if 'count' in sub.columns else None
-        C = zscore(pd.to_numeric(sub['deaths'], errors='coerce')) if 'deaths' in sub.columns else None
+        if 'interest' in sub.columns:
+            A = zscore(pd.to_numeric(sub['interest'], errors='coerce'))
+        else:
+            A = None
+
+        if 'count' in sub.columns:
+            B = zscore(pd.to_numeric(sub['count'], errors='coerce'))
+        else:
+            B = None
+
+        if 'deaths' in sub.columns:
+            C = zscore(pd.to_numeric(sub['deaths'], errors='coerce'))
+        else:
+            C = None
 
         # find best lag for interest-deaths or count-deaths pairs from cs
-        # we'll align the variable (A or B) forward by lag that maximizes abs r with deaths
+        # align the variable (A or B) forward by lag that maximizes |r| with deaths
         best_info = cs[(cs['disease_id']==disease)&(cs['gender']==gender)&(cs['pair']=='interest-deaths')]
         best_count_info = cs[(cs['disease_id']==disease)&(cs['gender']==gender)&(cs['pair']=='count-deaths')]
-        best_lag = int(best_info.loc[best_info['pearson_r'].abs().idxmax()]['lag']) if (not best_info.empty and best_info['pearson_r'].notna().any()) else 0
-        best_count_lag = int(best_count_info.loc[best_count_info['pearson_r'].abs().idxmax()]['lag']) if (not best_count_info.empty and best_count_info['pearson_r'].notna().any()) else 0
+        if (not best_info.empty and best_info['pearson_r'].notna().any()):
+            best_lag = int(best_info.loc[best_info['pearson_r'].abs().idxmax()]['lag'])
+        else:
+            best_lag = 0
+
+        if (not best_count_info.empty and best_count_info['pearson_r'].notna().any()):
+            best_count_lag = int(best_count_info.loc[best_count_info['pearson_r'].abs().idxmax()]['lag'])
+        else:
+            best_count_lag = 0
 
         # Time series overlay (z-score). Also show shifted series by best lag.
         plt.figure(figsize=(10,4))
